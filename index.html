@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="forms.css">
+    <style media="screen">
+        fieldset{
+            width: 50%;
+            background-color: rgb(200,200,200);
+        }
+        legend{
+            text-align: center;
+            background-color: rgb(50,50,50);
+            color: white;
+            padding: 0.5em 1em;
+        }
+        label{
+            display: block;
+        }
+        hr{
+            margin-top: 1em;
+            margin-bottom: 3em;
+        }
+    </style>
+</head>
+<body>
+    <form class="form1" action="display.html" method="get" id="theForm">
+        <FIeldset>
+            <Legend>User Information</Legend>
+            <label for="submit_bt">Take to display.html ==>
+                <input type="submit" name="submit_bt" id="submit_bt" value="SUBMIT BUTTON" onclick="passvalues();">
+            </label>
+            <label for="enter_name">Enter your name:
+            <input type="text" name="name" id="enter_name" placeholder="Type your name...">
+            </label>
+            <script type="text/javascript">
+                function passvalues(){
+                    let n = document.querySelector('#enter_name').value;
+                    localStorage.setItem('fullName', n);
+                }
+        
+            </script>
+
+            <hr>
+            <p>Select your favorite music genre(multiple selection)</p>
+            <input type="checkbox" name="music" value="rock" />Rock
+            <input type="checkbox" name="music" value="salsa" />Salsa
+            <input type="checkbox" name="music" value="hip_hop" />Hip Hop
+            <input type="checkbox" name="music" value="jazz" />Jazz
+            <hr>
+
+            <p>Select your favorite music genre(multiple selection)</p>
+            <input type="radio" name="music" value="rock" />Rock
+            <input type="radio" name="music" value="salsa" />Salsa
+            <input type="radio" name="music" value="hip_hop" />Hip Hop
+            <input type="radio" name="music" value="jazz" />Jazz
+
+            <hr>
+            <!--size shows how many items and multiple="multiple allows selection of multiple items"-->
+            <p>Select list: you can select ONE option: </p>
+            <select name="instruments" size="2">
+                <option value="guitar">GUITAR</option>
+                <option value="keyboard">KEYBOARD</option>
+                <option value="bass">BASS</option>
+                <option value="piano">PIANO</option>
+            </select>
+
+            <hr>
+            <p>Enter Your email: </p>
+            <input type="email" name="email" placeholder="Enter Email...">
+
+            <hr>
+            <label>Select date: <input type="date"></label>
+
+            <hr>
+            <textarea name="comments" rows="8" cols="80" placeholder="Enter your comments"></textarea>
+        </FIeldset>
+        
+    </form>
+</body>
+</html>
