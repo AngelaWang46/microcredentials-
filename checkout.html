@@ -3,8 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>checkout</title>
-    <link rel="stylesheet" href="project.css">
+    <!-- <link rel="stylesheet" href="project.css"> -->
     <style>
+        :root{
+            --primary: rgb(233, 201, 207);
+            --secondary: rgb(65, 65, 65);
+        }
+        body{
+        background-color: var(--primary);
+        }
+        .section1{
+            height: 190px;
+            width: 100%;
+        }
+        .con{
+            width: 85%;
+            height: 94%;
+            margin-left: 7%;
+            border: solid green;
+        }
+        .s1{
+            font-family: cursive;
+            font-size: 3.5em;
+        }
+        .s2{
+            font-family: fantasy;
+        }
+        .name{
+            width: 70%;
+            height: 90%;
+            margin-left: 44%;
+            padding-top: 50px;
+            padding-left: 10px;
+        }
+        .logo{
+            width: 150px;
+            height: 150px;
+            margin-left: 30%;
+            float: left;
+        }
+        .logo img{
+            width: 100%;
+            height: 100%;
+            border: solid var(--secondary) 5px;
+            border-radius: 50px;
+            padding: 20px;
+            margin-top: 23px;
+        }
         .form{
             width: 50%;
             margin-left: 5%;
@@ -56,6 +101,7 @@
             <span class="s2">Invest in the beauty of your skin</span>
         </div>
     </section>
+    <br><br>
     <h2 style="color: rgb(65, 65, 65);" align="center">CHECKOUT</h2>
     <form class="form" action="thankyou.html" method="POST">
         <fieldset class="field" style="width: 100%;">
@@ -330,9 +376,9 @@
             <label for="cardnumber">Card Number: <br><br><input type="text"></label>
             <br><br>
             <label for="date">Expiration Date: <br><br><input type="date"></label>
-            <br><br>
-<!--             <input type="submit" name="submit" value="PLACE ORDER" style="margin-top: 2em;"> NOT WORKING IN GITHUB -->
-            <a href="thankyou.html" class="sub">PLACE ORDERr</a>
+            <br><br><br>
+            <!-- <input type="submit" name="submit" value="PLACE ORDER" style="margin-top: 2em;"> -->
+            <a href="thankyou.html" class="sub">Submit Order</a>
             <br>
             <br>
     
