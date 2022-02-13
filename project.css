@@ -48,6 +48,7 @@ body{
 .modelfront{
     background-color: white;
     position: relative;
+    margin-top: 12%;
     margin: auto;
 }
 .modelback:target{
