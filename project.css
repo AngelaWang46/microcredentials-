@@ -269,6 +269,10 @@ body{
         width: 25%;
         height: 200px;
     }
+    .section1{
+        height: 190px;
+        width: 100%;
+    }
     .section2{
         height: 600px;
         width: 100%;
@@ -377,7 +381,6 @@ body{
         height: 130px;
         margin-left: 30%;
         margin-top: 10px;
-        border: solid green;
     }
     .logo img{
         width: 100%;
@@ -398,6 +401,10 @@ body{
     .help, .about, .account, .subscribe{
         width: 25%;
         height: 200px;
+    }
+    .section1{
+        height: 190px;
+        width: 100%;
     }
     .section2{
         height: 600px;
