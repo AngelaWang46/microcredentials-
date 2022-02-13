@@ -48,8 +48,8 @@ body{
 .modelfront{
     background-color: white;
     position: relative;
-    margin-top: 12%;
     margin: auto;
+    margin-top: 12%;
 }
 .modelback:target{
     opacity: 1;
